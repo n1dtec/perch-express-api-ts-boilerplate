@@ -1,6 +1,6 @@
 import express from 'express';
 
-import people from './people';
+import peopleRouter from './people';
 
 const router = express.Router();
 
@@ -10,6 +10,6 @@ router.get('/', (req, res) => {
   });
 });
 
-router.use('/people', people);
+router.use('/people', peopleRouter);
 
 export default router;
