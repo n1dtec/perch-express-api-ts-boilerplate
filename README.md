@@ -6,7 +6,7 @@ A simple RESTFUL API using ExpressJS in TypeScript connecting a Postgres Databas
 
 ### Setup Postgres Database
 
-* Install (Docker Desktop)[https://www.docker.com/products/docker-desktop]
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 * Start database using Docker depending on your CPU type
 	* amd64 (Intel CPU):
 		```
