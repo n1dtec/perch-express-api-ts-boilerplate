@@ -50,6 +50,12 @@ npm run dev
 
 The API endpoint http://localhost:3000/v1/people should now be available.
 
+## Reset the database after making data model changes
+
+```
+npm run db:sync
+```
+
 # What's in the repo?
 
 * `src/database/models` contains a sample data model `Person`
