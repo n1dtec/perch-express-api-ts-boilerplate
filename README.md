@@ -8,20 +8,24 @@ A simple RESTFUL API using [ExpressJS](https://expressjs.com/) in TypeScript con
 
 * Install [Docker Desktop](https://www.docker.com/products/docker-desktop) if you don't already have Docker.
 * Start the database using Docker depending on your CPU type
-	* amd64 (Intel CPU):
-		```
-		docker run --name perch-assignment-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgis/postgis:14-3.3
-		```
-	* arm64 (Apple CPU):
-		```
-		docker run --name perch-assignment-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d ghcr.io/baosystems/postgis:14-3.3
-		```
-	* This will start a Postgres database running on port 5432 (default for postgres).
+  * amd64 (Intel CPU):
+
+    ```bash
+    docker run --name perch-assignment-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgis/postgis:14-3.3
+    ```
+
+  * arm64 (Apple CPU):
+
+    ```bash
+    docker run --name perch-assignment-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d ghcr.io/baosystems/postgis:14-3.3
+    ```
+
+  * This will start a Postgres database running on port 5432 (default for postgres).
 
 ### Install Prerequisites
 
 ```
-npm install -g ts-node sequelize-cli-typescript
+npm install -g ts-node
 ```
 
 ### Setup the API

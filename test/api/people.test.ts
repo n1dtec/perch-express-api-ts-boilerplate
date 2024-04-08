@@ -12,7 +12,7 @@ describe('GET /v1/people', () => {
     };
 
     const response = await request(app).get('/v1/people')
-			.expect(200);
+      .expect(200);
 
     expect(response.body).toEqual(expectedResponse);
   });
