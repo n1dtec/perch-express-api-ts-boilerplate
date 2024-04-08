@@ -24,31 +24,33 @@ A simple RESTFUL API using [ExpressJS](https://expressjs.com/) in TypeScript con
 
 ### Install Prerequisites
 
-```
+You will need Node 20 available on your machine/environment.
+
+```bash
 npm install -g ts-node
 ```
 
 ### Setup the API
 
-```
+```bash
 npm install && npm db:setup:all
 ```
 
 ## Check Lint
 
-```
+```bash
 npm run lint
 ```
 
 ## Check Tests
 
-```
+```bash
 npm test
 ```
 
 ## Start the Development server
 
-```
+```bash
 npm run dev
 ```
 
@@ -56,11 +58,11 @@ The API endpoint http://localhost:3000/v1/people should now be available.
 
 ## Reset the database after making data model changes
 
-```
+```bash
 npm run db:sync
 ```
 
-# What's in the repo?
+## What's in the repo?
 
 * `src/database/models` contains a sample data model `Person`
 * `src/api` contains the endpoint routing
