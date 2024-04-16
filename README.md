@@ -33,7 +33,7 @@ npm install -g ts-node
 ### Setup the API
 
 ```bash
-npm install && npm db:setup:all
+npm install && npm run db:setup:all
 ```
 
 ## Check Lint
@@ -67,3 +67,43 @@ npm run db:sync
 * `src/database/models` contains a sample data model `Person`
 * `src/api` contains the endpoint routing
 * `test/` contains jest tests
+
+# Task List APIs
+
+## Get Tasks
+
+* URL: /v1/tasks
+* Method: GET
+* Description: Get all tasks in the database.
+
+## Create a task
+
+* URL: /v1/tasks
+* Method: POST
+* Description: Create a task in the database.
+* Request body:
+```json
+{
+  "title": "New Task",
+  "description": "Details of new task",
+  "status": "INCOMPLETE"
+}
+```
+
+## Update status of a task
+
+* URL: /v1/tasks/:id
+* Method: PATCH
+* Description: Update status of an existing task.
+* Request body:
+```json
+{
+  "status": "COMPLETE"
+}
+```
+
+## Delete a task
+
+* URL: /v1/tasks/:id
+* Method: DELETE
+* Description: Delete an existing task using id from path param.
